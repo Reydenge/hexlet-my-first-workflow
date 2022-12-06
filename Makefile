@@ -1,6 +1,5 @@
-#Makefile
-say-hello:
-	echo "Hello, World!"
-
-#Bash
+[bash]
+----
 make say-hello
+Hello, World!
+----
