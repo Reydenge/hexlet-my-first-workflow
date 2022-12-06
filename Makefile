@@ -1,18 +1,21 @@
 say-hello:
 	echo "Hello, World!"
 
-## Using
-```sh
-make setup
-make start
-```
+setup: install build
 
-## Run tests
-```sh
-make test
-```
+install:
+	npm install
 
-## Run linter
-```sh
-make lint
-```
+build:
+	npm run build
+
+start:
+	npm start
+
+test:
+	npm test
+
+lint:
+	npm eslint .
+
+.PHONY: build
